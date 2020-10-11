@@ -80,15 +80,15 @@ function createCats(cats) {
 
     for(let i = 0; i < cats.length; i++) {
 
-        let releaseYear = "Age unknown";
+        let catAge = "Age unknown";
 
         if(cats[i].age){
-            releaseYear = cats[i].age
+            catAge = cats[i].age
         }
 
         html += `<div class="age">
                     <h5>${cats[i].name}</h5>
-                    <p>Released: ${releaseYear}</p>
+                    <p>Released: ${catAge}</p>
                 </div>`;
     }
 
